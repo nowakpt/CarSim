@@ -4,3 +4,7 @@ out
 .idea
 .vs
 .vscode
+
+build/
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
