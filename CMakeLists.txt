@@ -19,11 +19,12 @@ add_executable(main
     src/Window.cpp
     src/Car.cpp
     src/CarDisplay.cpp
+    src/BarrierDisplay.cpp
     src/Gearbox.cpp
 )
 target_include_directories(main PRIVATE include)
 target_link_libraries(main PRIVATE sfml-graphics)
-target_compile_features(main PRIVATE cxx_std_20)
+target_compile_features(main PRIVATE cxx_std_23)
 
 if(WIN32)
     add_custom_command(

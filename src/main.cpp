@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include "Window.hpp"
+#include "Barrier.hpp"
 #include "Car.hpp"
+#include "BarrierDisplay.hpp"
 #include "CarDisplay.hpp"
 #include "Gearbox.hpp"
 
@@ -36,6 +38,9 @@ int main()
     Car car {800.0, 400.0, 0.0};
     CarDisplay carDisplay {car};
 
+    Barrier barrier {{{100.0, 100.0}, {1800.0, 100.0}, {1800.0, 900.0}, {100.0, 900.0}, {100.0, 100.0}}};
+    BarrierDisplay barrierDisplay {barrier};
+
     while (window.isOpen())
     {
         for (auto event = sf::Event{}; window.pollEvent(event);)
@@ -50,6 +55,7 @@ int main()
 
         window.clear();
         car.advanceTime(0.016);
+        barrierDisplay.draw(window);
         carDisplay.draw(window);
         window.display();
     }
