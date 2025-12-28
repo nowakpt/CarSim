@@ -6,8 +6,7 @@
 using Point = std::tuple<double, double>;
 using Line = std::tuple<Point, Point>;
 
-class Barrier
-{
+class Barrier {
 public:
     Barrier(std::vector<Point>&& vertices) :
         vertices(vertices)

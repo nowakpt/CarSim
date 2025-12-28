@@ -5,8 +5,7 @@
 #include "Car.hpp"
 
 
-class CarDisplay
-{
+class CarDisplay {
 public:
     CarDisplay(const Car& car) :
         car(car)

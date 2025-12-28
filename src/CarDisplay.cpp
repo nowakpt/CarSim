@@ -4,8 +4,7 @@
 #include "CarDisplay.hpp"
 
 
-void CarDisplay::draw(sf::RenderWindow& window)
-{
+void CarDisplay::draw(sf::RenderWindow& window) {
     auto [x, y, heading] = car.getPosition();
 
     sf::RectangleShape rect {{car.LENGTH, car.WIDTH}};

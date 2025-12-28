@@ -5,8 +5,7 @@
 
 class Car;
 
-class Gearbox
-{
+class Gearbox {
 public:
     enum class Gear {N, D, R};
 

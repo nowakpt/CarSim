@@ -2,8 +2,7 @@
 #include "BarrierDisplay.hpp"
 
 
-sf::VertexArray BarrierDisplay::buildVertexArray(const Barrier& barrier) const
-{
+sf::VertexArray BarrierDisplay::buildVertexArray(const Barrier& barrier) const {
     const auto& vertices = barrier.getVertices();
     sf::VertexArray va(sf::LineStrip, vertices.size());
 
@@ -17,8 +16,7 @@ sf::VertexArray BarrierDisplay::buildVertexArray(const Barrier& barrier) const
 }
 
 
-void BarrierDisplay::draw(sf::RenderWindow& window)
-{
+void BarrierDisplay::draw(sf::RenderWindow& window) {
     window.draw(lines);
 }
 

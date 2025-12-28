@@ -3,8 +3,7 @@
 #include <stdexcept>
 #include "Car.hpp"
 
-void Car::advanceTime(double dt)
-{
+void Car::advanceTime(double dt) {
     if (dt < 0.0) throw std::logic_error("negative time delta");
 
     gearbox.advanceTime(dt);

@@ -6,8 +6,7 @@
 #include "Gearbox.hpp"
 
 
-class Car
-{
+class Car {
 public:
     Car(double x, double y, double heading, double length = 130.0, double width = 60.0) :
         LENGTH(length),

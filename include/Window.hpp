@@ -2,8 +2,7 @@
 #define WINDOW_HPP
 
 
-class Window
-{
+class Window {
 public:
 
 
